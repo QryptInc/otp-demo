@@ -4,7 +4,7 @@ Demonstration of OTP technology to encrypt an image.
 ## Part 1
 We will encrypt the image using AES ECB mode to demonstrate the shortcommings of classical cryptography.
 
-Boilerplate code is provided in this repository. Please fill out encryptAES256ECB in encrypt.cpp before moving to the next part. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
+Boilerplate code is provided in this repository. Please fill out encryptAES256ECB function in encrypt.cpp before moving to the next part. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
 
 ### References
 - https://www.openssl.org/docs/man1.1.1/man3/EVP_EncryptInit_ex.html
@@ -13,21 +13,13 @@ Boilerplate code is provided in this repository. Please fill out encryptAES256EC
 ## Part 2
 We will encrypt the image using OTP to demonstrate the improvement over classical cryptography.
 
-Boilerplate code is provided in this repository. Please fill out xorVectors and the main function so that the application can encrypt the image contents using the OTP.
+Boilerplate code is provided in this repository. Please fill out xorVectors function and the main function so that the application can encrypt the image contents using the OTP.
 
 ## Setup instructions
 You can follow the steps below to get started if you choose to use the boilerplate code in the repository.
 
-### Start dev container
-1. Install docker desktop and VSCode
-2. Open this folder in VSCode
-3. Install the Dev Containers extension in VSCode
-4. Reopen the folder in the dev container
-
-#### References
-- https://www.docker.com/products/docker-desktop/
-- https://code.visualstudio.com
-- https://code.visualstudio.com/docs/devcontainers/containers
+### Create the codespace
+Click the `<> Code` dropdown on github and select `Create codespace on main`. This will create a new codespace, which is a sandbox with everything you need to complete this workshop. Please allow up to 5 minutes for the codespace to set up the environment.
 
 ### Build Steps
 1. Open a terminal in VSCode

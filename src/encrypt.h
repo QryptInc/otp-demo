@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <stdexcept>
-#include <string>
 #include <vector>
 
 std::vector<uint8_t> encryptAES256ECB(const std::vector<uint8_t> aesKey, const std::vector<uint8_t> &data);

@@ -18,13 +18,10 @@ std::vector<uint8_t> encryptAES256ECB(const std::vector<uint8_t> aesKey, const s
     // 2. Set engine EVP_aes_256_ecb: AES-256 Electronic Codebook
 
 
-    // 3. Over allocate vector for encrypted data to account for block size
+    // 3. Encrypt the plaintext
 
 
-    // 4. Encrypt the plaintext
-
-
-    // 5. Finalize encrypt
+    // 4. Finalize encrypt
 
 
 }
@@ -37,13 +34,10 @@ std::vector<uint8_t> decryptAES256ECB(const std::vector<uint8_t> aesKey, const s
     // 2. Set engine EVP_aes_256_ecb: AES-256 Electronic Codebook
 
 
-    // 3. Allocate vector for decrypted data
+    // 3. Decrypt the ciphertext
 
 
-    // 4. Decrypt the ciphertext
-
-
-    // 5. Finalize decrypt
+    // 4. Finalize decrypt
 
 
 }
