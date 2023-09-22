@@ -1,0 +1,17 @@
+{
+    "name": "otp-demo",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        "--platform=linux/amd64"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-vscode.cpptools"
+            ]
+        }
+    },
+}
