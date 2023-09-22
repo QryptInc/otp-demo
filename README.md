@@ -6,6 +6,10 @@ We will encrypt the image using AES ECB mode to demonstrate the shortcommings of
 
 Boilerplate code is provided in this repository. Please fill out encryptAES256ECB in encrypt.cpp before moving to the next part. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
 
+### References
+- https://www.openssl.org/docs/man1.1.1/man3/EVP_EncryptInit_ex.html
+- https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
+
 ## Part 2
 We will encrypt the image using OTP to demonstrate the improvement over classical cryptography.
 
@@ -16,9 +20,9 @@ You can follow the steps below to get started if you choose to use the boilerpla
 
 ### Start dev container
 1. Install docker desktop and VSCode
-1. Open this folder in VSCode
-2. Install the Dev Containers extension in VSCode
-3. Reopen the folder in the dev container
+2. Open this folder in VSCode
+3. Install the Dev Containers extension in VSCode
+4. Reopen the folder in the dev container
 
 #### References
 - https://www.docker.com/products/docker-desktop/
