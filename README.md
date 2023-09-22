@@ -2,12 +2,12 @@
 Demonstration of OTP technology to encrypt an image.
 
 ## Setup instructions
-Log in to your personal GitHub account. Click the `<> Code` dropdown on GitHub and select `Create codespace on main`. This will create a new codespace, which is a sandbox with everything you need to complete this workshop. Please allow up to 5 minutes for the codespace to set up the environment.
+Log in to your personal GitHub account. Click the `<> Code` dropdown on GitHub and select `Create codespace on main`. This will create a new codespace, which is a sandbox with everything you need to complete this workshop. Please allow up to 4 minutes for the codespace to set up the environment. Note if codespaces is not spinning up, please try a different browser (we have tested it with Firefox).
 
 ## Part 1
 We will encrypt the image using AES ECB mode to demonstrate the shortcomings of classical cryptography.
 
-Boilerplate code is provided in this repository. Please fill out encryptAES256ECB function in encrypt.cpp. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
+Boilerplate code is provided in this repository. Please fill out encryptAES256ECB function in encrypt.cpp. In addition, fill out the main function in main.cpp so that the application can encrypt the image contents using AES ECB mode. You may optionally fill out decryptAES256ECB function in encrypt.cpp to support decryption if you have time.
 
 Follow the build steps at the end of this README to build the application. We have provided a sample input image and AES key (32 bytes) to test this part. Execute the following command from the build directory.
 ```
@@ -21,7 +21,7 @@ Follow the build steps at the end of this README to build the application. We ha
 ## Part 2
 We will encrypt the image using OTP to demonstrate the improvement over classical cryptography.
 
-Boilerplate code is provided in this repository. Please fill out xorVectors function and the main function so that the application can encrypt the image contents using the OTP.
+Boilerplate code is provided in this repository. Please fill out xorVectors function and the main function in main.cpp so that the application can encrypt the image contents using the OTP.
 
 Again, follow the build steps at the end of this README to build the application. We have provided a sample input image and OTP (196608 bytes) to test this part. Execute the following command from the build directory.
 ```
