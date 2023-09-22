@@ -1,10 +1,18 @@
 # otp-demo
 Demonstration of OTP technology to encrypt an image.
 
-## Part 1
-We will encrypt the image using AES ECB mode to demonstrate the shortcommings of classical cryptography.
+## Setup instructions
+Log in to your personal GitHub account. Click the `<> Code` dropdown on GitHub and select `Create codespace on main`. This will create a new codespace, which is a sandbox with everything you need to complete this workshop. Please allow up to 5 minutes for the codespace to set up the environment.
 
-Boilerplate code is provided in this repository. Please fill out encryptAES256ECB function in encrypt.cpp before moving to the next part. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
+## Part 1
+We will encrypt the image using AES ECB mode to demonstrate the shortcomings of classical cryptography.
+
+Boilerplate code is provided in this repository. Please fill out encryptAES256ECB function in encrypt.cpp. In addition, fill out the main function so that the application can encrypt the image contents using AES ECB mode.
+
+Follow the build steps at the end of this README to build the application. We have provided a sample input image and AES key (32 bytes) to test this part. Execute the following command from the build directory.
+```
+./otp-demo encrypt --input-filename=../files/tux.bmp --key-filename=../files/aes.dat --output-filename=../files/encrypted_tux.bmp
+```
 
 ### References
 - https://www.openssl.org/docs/man1.1.1/man3/EVP_EncryptInit_ex.html
@@ -15,13 +23,12 @@ We will encrypt the image using OTP to demonstrate the improvement over classica
 
 Boilerplate code is provided in this repository. Please fill out xorVectors function and the main function so that the application can encrypt the image contents using the OTP.
 
-## Setup instructions
-You can follow the steps below to get started if you choose to use the boilerplate code in the repository.
+Again, follow the build steps at the end of this README to build the application. We have provided a sample input image and OTP (196608 bytes) to test this part. Execute the following command from the build directory.
+```
+./otp-demo encrypt --input-filename=../files/tux.bmp --key-filename=../files/otp.dat --output-filename=../files/encrypted_tux.bmp
+```
 
-### Create the codespace
-Click the `<> Code` dropdown on github and select `Create codespace on main`. This will create a new codespace, which is a sandbox with everything you need to complete this workshop. Please allow up to 5 minutes for the codespace to set up the environment.
-
-### Build Steps
+## Build Steps
 1. Open a terminal in VSCode
 2. Create a build directory
     ```
@@ -32,11 +39,3 @@ Click the `<> Code` dropdown on github and select `Create codespace on main`. Th
     cmake ..
     cmake --build .
     ```
-
-### Run Demo
-We have provided a sample input image, AES key (32 bytes) and OTP (196608 bytes).
-
-Execute the following command from the build directory.
-```
-./otp-demo encrypt --input-filename=../files/tux.bmp --key-filename=../files/aes.dat --output-filename=../files/encrypted_tux.bmp
-```
