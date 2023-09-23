@@ -51,10 +51,23 @@ int main(int argc, char* argv[]) {
     // Run cryptography operation
     std::vector<uint8_t> output;
     // PART 1: AES ECB encryption
-    // Fill this out
-
+#if 0
+    if (key.size() != AESKeyLengthInBytes) {
+        throw std::invalid_argument("AES-256 key is invalid. The file is not the correct size.");
+    }
+    if (mode == "encrypt") {
+        output = encryptAES256ECB(key, input_data);
+    }
+    else { // operation == "decrypt"
+        output = decryptAES256ECB(key, input_data);
+    }
     // PART 2: OTP encryption
-    // Fill this out
+#else
+    if (key.size() != input_data.size()) {
+        throw std::invalid_argument("One-time-pad is invalid. The key file must be the same length as the input file.");
+    }
+    output = xorVectors(key, input_data);
+#endif
 
     // Write output
     output_file.write((char *)&(header)[0], header.size());
